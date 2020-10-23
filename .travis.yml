@@ -6,6 +6,10 @@ language: go
 go:
   - 1.3
   - tip
+jobs:
+ exclude:
+  - go: 1.3
+    arch: ppc64le
 
 env:
   - "PATH=$HOME/gopath/bin:$PATH"
